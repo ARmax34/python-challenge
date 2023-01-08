@@ -45,12 +45,12 @@ with open(csvpath) as csvfile:
     #Creating the Changes Array 
     #changes = []
     changes = [(numbers[i + 1] - numbers[i]) for i in range(0,len(numbers)-1)]
-    print("printing changes",changes)
+    #print("printing changes",changes)
 
     #Average Change
     avgChange = sum(changes) / len(changes)
     #avgChange = round(avgChange,2)
-    print("average change:",avgChange)
+    #print("average change:",avgChange)
 
 
 
@@ -58,36 +58,36 @@ with open(csvpath) as csvfile:
 
     #Max Changes
     maxChanges = max(changes)
-    print(maxChanges)
+    #print(maxChanges)
 
     #Max Index for Changes
     maxChangesIndex = changes.index(maxChanges)
-    print(maxChangesIndex)   
+    #print(maxChangesIndex)   
 
     #Max Index change for cr
     maxMainIndex = maxChangesIndex
-    print(maxMainIndex)
+    #print(maxMainIndex)
     #print("amount of change", changes[maxMainIndex])
     #print("dates -------: ", dates[maxMainIndex + 1])
-    maxChanges = changes[maxMainIndex]
+    #maxChanges = changes[maxMainIndex]
     periodMaxDate = dates[maxMainIndex + 1]
 
 
 
     #Min Changes
     minChanges = min(changes)
-    print(minChanges)
+    #print(minChanges)
 
     #Min Index for Changes
     minChangesIndex = changes.index(minChanges)
-    print(minChangesIndex)   
+    #print(minChangesIndex)   
 
     #Max Index change for cr
     minMainIndex = minChangesIndex
-    print(minMainIndex)
+    #print(minMainIndex)
     #print("amount of change", changes[minMainIndex])
     #print("dates -------: ", dates[minMainIndex + 1])
-    minChanges = changes[minMainIndex]
+    #minChanges = changes[minMainIndex]
     periodMinDate = dates[minMainIndex + 1]
 
 

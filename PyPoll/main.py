@@ -13,11 +13,11 @@ with open(csvpath) as csvfile:
     # CSV reader specifies delimiter and variable that holds contents
     csvreader = csv.reader(csvfile, delimiter=',')
 
-    print(csvreader)
+    #print(csvreader)
 
     # Read the header row first (skip this step if there is now header)
     csv_header = next(csvreader)
-    print(f"CSV Header: {csv_header}")
+    #print(f"CSV Header: {csv_header}")
 
 
 
@@ -47,14 +47,14 @@ with open(csvpath) as csvfile:
             candidate_index = candidates.index(person)
             votes[candidate_index] += 1
 
-    print("index return" + str(candidates))
-    print("vote count: " + str(votes))
+    #print("index return" + str(candidates))
+    #print("vote count: " + str(votes))
 
 
     #percentage_count list creation
     percentage_count = []
     percentage_count = [(votes[k]/all_votes)*100 for k in range(0,len(votes))]
-    print(percentage_count)
+    #print(percentage_count)
 
     #The Printout card
     print("Election Results" + '\n')
